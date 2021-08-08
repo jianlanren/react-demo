@@ -36,8 +36,8 @@ class App extends Component {
       <ul>
         {this.state.data.map(contact => {
           return (
-            <li key={contact.stockId}>
-              {contact.stockName}
+            <li key={contact.stockName}>
+              {contact.stockName} - {contact.stockId}
             </li>
           );
         })}
